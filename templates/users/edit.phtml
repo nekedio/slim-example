@@ -1,0 +1,55 @@
+
+<form action="/users/<?= htmlspecialchars($user['id']) ?>" method="post">
+  <input type="hidden" name="_METHOD" value="PATCH">
+    
+  <div>
+    <label>
+      Имя
+      <input type="text" name="user[name]" value="<?= htmlspecialchars($user['name']) ?>">
+    </label>
+    <?php if (isset($errors['name'])): ?>
+      <div><?= $errors['name'] ?></div>
+    <?php endif ?>
+  </div>
+  
+  <div>
+    <label>
+      Email
+      <input type="email" required name="user[email]" value="<?= htmlspecialchars($user['email']) ?>">
+    </label>
+  </div>
+  
+  <div>
+    <label>
+      Пароль
+      <input type="password" required name="user[password]" value="<?= htmlspecialchars($user['password']) ?>">
+    </label>
+    <?php if (isset($errors['password'])): ?>
+      <div><?= $errors['password'] ?></div>
+    <?php endif ?>
+  </div>
+
+  <div>
+    <label>
+      Подтверждение пароля
+      <input type="password" required name="user[passwordConfirmation]" value="<?= htmlspecialchars($user['passwordConfirmation']) ?>">
+    </label>
+    <?php if (isset($errors['passwordConfirmation'])): ?>
+      <div><?= $errors['passwordConfirmation'] ?></div>
+    <?php endif ?>
+  </div>
+
+  <div>
+    <label>
+      Город
+      <select name="user[city]">
+        <option value="3">Москва</option>
+        <option value="13">Пенза</option>
+        <option  value="399">Томск</option>
+        <option  value="39">Казань</option>
+      </select>
+    </label>
+  </div>
+
+  <input type="submit" value="Update">
+</form>

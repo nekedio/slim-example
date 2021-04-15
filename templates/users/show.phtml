@@ -1,0 +1,19 @@
+
+<a href="/users">users</a>
+<a href="/users/<?= htmlspecialchars($user['id']) ?>/edit">edit</a>
+<a href="/users/<?= htmlspecialchars($user['id']) ?>/delete">deleled</a>
+
+<div>
+  <?php foreach ($user as $key => $value) : ?>
+      <div>
+          <?= $key ?>: <?= htmlspecialchars($value) ?>
+      </div>
+  <?php endforeach ?>
+</div>
+
+<div>
+  <?= $user['name'] ?>
+<div>
+<div>
+  <?= $user['email'] ?>
+<div>

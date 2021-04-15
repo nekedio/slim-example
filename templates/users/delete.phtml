@@ -1,0 +1,10 @@
+<div> Are you sure? </div>
+
+<!-- <form> -->
+<!--   <button formaction="/users/393" formmethod="get"> No </button> -->
+<!-- </form> -->
+
+<form action="/users/<?= $user['id'] ?>" method="post">
+  <input type="hidden" name="_METHOD" value="DELETE">
+  <input type="submit" value="Remove">
+</form>

@@ -1,0 +1,6 @@
+{"name":"Ivanov","email":"Ivanov@go.com","password":"2222","passwordConfirmation":"2222","city":"399","id":393}
+{"name":"Petrov","email":"petrov@ya.ru","password":"1111","passwordConfirmation":"1111","city":"399","id":17}
+{"name":"Sidorov","email":"gasas@gassa","password":"aa","passwordConfirmation":"aa","city":"3","id":12}
+{"name":"Akchubaev","email":"gasas@gassa","password":"aa","passwordConfirmation":"aa","city":"3","id":381}
+{"name":"Ololoev","email":"ololoev@go.com","password":"1111","passwordConfirmation":"1111","city":"3","id":496}
+{"name":"Talalaev","email":"gasas@gassa","password":"aa","passwordConfirmation":"aa","city":"3","id":676}
